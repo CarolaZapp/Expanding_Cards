@@ -1,21 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap'); */
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-condensed-v25-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/roboto-condensed-v25-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/roboto-condensed-v25-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/roboto-condensed-v25-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/roboto-condensed-v25-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/roboto-condensed-v25-latin-regular.svg#RobotoCondensed")
+      format("svg"); /* Legacy iOS */
+}
 
 *{
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: "Roboto Condensed";
+  font-size: 1rem;
   display:flex;
   flex-direction: column;
   align-items: center;
   height:100vh;
   overflow:hidden;
   margin:0;
+  background-color: rgb(0,12,34);
 }
 
 h1 {
-  color: rgb(6, 15, 139);
+  color: rgb(51,102,204);
   font-size: clamp(2rem, 3.5vw, 4rem);
 }
 
@@ -28,9 +49,9 @@ h1 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 70vh;
   border-radius: 1rem;
-  color:white;
+  color: white;
   cursor: pointer;
   flex:0.5;
   margin: 1rem;
@@ -50,7 +71,7 @@ h1 {
 .card.active{
   flex:5;
   /* border: 0.33rem solid rgb(6, 15, 139); */
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
 }
 
 .card.active h3{
